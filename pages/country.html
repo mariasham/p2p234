@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Country | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1
+            id="countryTitle"
+            style="
+              font-size:4rem;
+              color:#805690;
+              font-family:Georgia, serif;
+              margin-bottom:18px;
+            "
+          >
+            Countries
+          </h1>
+
+          <p
+            id="countryDesc"
+            style="
+              color:#6a7076;
+              max-width:760px;
+              margin:0 auto;
+              line-height:1.9;
+              font-size:1.1rem;
+            "
+          >
+            Explore countries, cities, culture, and places worth slowing down for.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            id="countryImage"
+            src="../images/world.png"
+            alt="Travel aesthetic"
+            style="
+              width:100%;
+              height:350px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUICK QUOTE -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:950px;
+          margin:0 auto 60px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.1rem;
+          ">
+            ✦ Sometimes choosing a country is less about the place itself —
+            and more about the feeling you want your life to have while you're there.
+          </p>
+
+        </section>
+
+        <!-- COUNTRY GRID -->
+
+        <div
+          class="grid-layout"
+          id="cityGrid"
+          style="margin-bottom:60px;"
+        >
+
+          <!-- JS INSERTS CONTENT -->
+
+        </div>
+
+        <!-- CTA -->
+
+        <section style="text-align:center;">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:18px;
+          ">
+            Find a place that feels right.
+          </h2>
+
+          <p style="
+            color:#6a7076;
+            max-width:700px;
+            margin:0 auto 30px;
+            line-height:1.8;
+          ">
+            The world is too big to only experience one version of life.
+          </p>
+
+          <a
+            href="booking.html"
+            style="
+              background:#f89e9d;
+              color:white;
+              padding:15px 28px;
+              border-radius:14px;
+              font-weight:700;
+              display:inline-block;
+            "
+          >
+            Start Planning ✈️
+          </a>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ================= PAGE SCRIPT ================= -->
+
+  <script>
+
+    const params = new URLSearchParams(window.location.search);
+    const continent = params.get("continent");
+
+    const countryData = {
+
+      europe: {
+        title: "Europe",
+        desc: "Old streets, café mornings, art, architecture, and cities full of history.",
+        image: "../images/europe-banner.jpg",
+
+        countries: [
+
+          {
+            name: "Italy",
+            image: "../images/italy.jpg",
+            desc: "Slow mornings, pasta, history, and beautiful chaos."
+          },
+
+          {
+            name: "France",
+            image: "../images/france.jpg",
+            desc: "Art, fashion, cafés, and timeless cities."
+          },
+
+          {
+            name: "Greece",
+            image: "../images/greece.jpg",
+            desc: "Blue water, islands, sunsets, and ancient ruins."
+          },
+
+          {
+            name: "Spain",
+            image: "../images/spain.jpg",
+            desc: "Late nights, energy, beaches, and culture."
+          }
+
+        ]
+      },
+
+      asia: {
+        title: "Asia",
+        desc: "Tradition, movement, technology, and unforgettable cities.",
+        image: "../images/asia-banner.jpg",
+
+        countries: [
+
+          {
+            name: "Japan",
+            image: "../images/japan.jpg",
+            desc: "Precision, calm, and unforgettable city life."
+          },
+
+          {
+            name: "South Korea",
+            image: "../images/korea.jpg",
+            desc: "Fashion, cafés, nightlife, and modern culture."
+          },
+
+          {
+            name: "Thailand",
+            image: "../images/thailand.jpg",
+            desc: "Street food, beaches, temples, and nightlife."
+          },
+
+          {
+            name: "Vietnam",
+            image: "../images/vietnam.jpg",
+            desc: "Scooters, coffee, landscapes, and incredible food."
+          }
+
+        ]
+      },
+
+      africa: {
+        title: "Africa",
+        desc: "Rhythm, color, nature, history, and unforgettable experiences.",
+        image: "../images/africa-banner.jpg",
+
+        countries: [
+
+          {
+            name: "Morocco",
+            image: "../images/morocco.jpg",
+            desc: "Markets, colors, architecture, and desert landscapes."
+          },
+
+          {
+            name: "Egypt",
+            image: "../images/egypt.jpg",
+            desc: "Ancient history, pyramids, and the Nile."
+          },
+
+          {
+            name: "South Africa",
+            image: "../images/southafrica.jpg",
+            desc: "Wildlife, coastlines, and vibrant cities."
+          },
+
+          {
+            name: "Kenya",
+            image: "../images/kenya.jpg",
+            desc: "Safari landscapes and unforgettable nature."
+          }
+
+        ]
+      }
+
+    };
+
+    const title = document.getElementById("countryTitle");
+    const desc = document.getElementById("countryDesc");
+    const image = document.getElementById("countryImage");
+    const grid = document.getElementById("cityGrid");
+
+    if (countryData[continent]) {
+
+      title.innerText = countryData[continent].title;
+      desc.innerText = countryData[continent].desc;
+      image.src = countryData[continent].image;
+
+      countryData[continent].countries.forEach(country => {
+
+        grid.innerHTML += `
+
+          <a
+            href="cityguide.html?city=${country.name.toLowerCase()}"
+            class="info-card"
+          >
+
+            <img
+              src="${country.image}"
+              alt="${country.name}"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Explore
+              </span>
+
+              <h3 style="color:#805690;">
+                ${country.name}
+              </h3>
+
+              <p>
+                ${country.desc}
+              </p>
+
+            </div>
+
+          </a>
+
+        `;
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>

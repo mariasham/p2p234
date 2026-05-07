@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Itinerary | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAV ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:15px;
+          ">
+            Your Itinerary ✈️
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.8;
+            font-size:1.08rem;
+          ">
+            This is where everything stops feeling scattered
+            and starts making sense — day by day, at your pace.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            src="../images/itineraryhero.jpg"
+            alt="Travel itinerary"
+            style="
+              width:100%;
+              height:360px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- INTRO BLOCK -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:950px;
+          margin:0 auto 60px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.03rem;
+          ">
+            ✦ The best itineraries don’t try to fill every second.
+            They leave room for wandering, rest, and the unexpected moments
+            that end up becoming your favorite memories.
+          </p>
+
+        </section>
+
+        <!-- TIMELINE -->
+
+        <section style="margin-bottom:70px;">
+
+          <h2 style="
+            margin-bottom:30px;
+            color:#805690;
+            font-size:2rem;
+          ">
+            Sample 5-Day Trip
+          </h2>
+
+          <div class="grid-layout">
+
+            <!-- DAY 1 -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/arrivalday.jpg"
+                alt="Arrival day"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Day 1 ✈️
+                </span>
+
+                <h3 style="color:#805690;">
+                  Arrival
+                </h3>
+
+                <p>
+                  Land, settle in, explore nearby cafés,
+                  and let yourself adjust slowly.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- DAY 2 -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/exploreday.jpg"
+                alt="Explore city"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Day 2 🌎
+                </span>
+
+                <h3 style="color:#805690;">
+                  Explore
+                </h3>
+
+                <p>
+                  Walk around, discover local spots,
+                  and start understanding the rhythm of the city.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- DAY 3 -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/activityday.jpg"
+                alt="Travel experience"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Day 3 🎟️
+                </span>
+
+                <h3 style="color:#805690;">
+                  Experiences
+                </h3>
+
+                <p>
+                  Plan something memorable —
+                  a museum, cooking class, beach day, or guided tour.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- DAY 4 -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/slowday.jpg"
+                alt="Slow travel day"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Day 4 ☁️
+                </span>
+
+                <h3 style="color:#805690;">
+                  Slow Day
+                </h3>
+
+                <p>
+                  Sleep in, wander aimlessly,
+                  and leave space for the unexpected.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- DAY 5 -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/finalday.jpg"
+                alt="Last day travel"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Day 5 🌅
+                </span>
+
+                <h3 style="color:#805690;">
+                  Wrap Up
+                </h3>
+
+                <p>
+                  Revisit your favorite place,
+                  take photos, and end the trip intentionally.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- TIPS -->
+
+        <section style="margin-bottom:70px;">
+
+          <h2 style="
+            margin-bottom:25px;
+            color:#805690;
+            font-size:2rem;
+          ">
+            Planning Tips ✦
+          </h2>
+
+          <div class="grid-layout">
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🕊️ Don’t Overbook
+                </h3>
+
+                <p>
+                  Leave room for spontaneous moments
+                  instead of filling every hour.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  📍 Group by Area
+                </h3>
+
+                <p>
+                  Explore nearby places together
+                  instead of wasting time traveling back and forth.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🌤️ Stay Flexible
+                </h3>
+
+                <p>
+                  Weather changes, energy changes,
+                  and sometimes the best plans are the unplanned ones.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- MINI SCHEDULE -->
+
+        <section style="
+          background:#ffffff;
+          padding:45px;
+          border-radius:24px;
+          margin-bottom:70px;
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:25px;
+            text-align:center;
+          ">
+            Example Daily Flow
+          </h2>
+
+          <div class="grid-layout">
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#805690;">
+                  ☀️ Morning
+                </h3>
+
+                <p>
+                  Coffee, breakfast, and one planned activity.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#805690;">
+                  🌤️ Afternoon
+                </h3>
+
+                <p>
+                  Explore neighborhoods, museums,
+                  shopping, or local food spots.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#805690;">
+                  🌙 Evening
+                </h3>
+
+                <p>
+                  Slow dinners, sunsets, and quieter moments.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- FINAL CTA -->
+
+        <section style="
+          text-align:center;
+          background:#fff7fb;
+          padding:45px 30px;
+          border-radius:24px;
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:15px;
+          ">
+            Your trip should feel like you.
+          </h2>
+
+          <p style="
+            color:#6a7076;
+            max-width:650px;
+            margin:0 auto 25px;
+            line-height:1.8;
+          ">
+            Not rushed. Not forced.
+            Just thoughtfully planned enough
+            to let you actually enjoy it.
+          </p>
+
+          <a href="booking.html"
+            class="submit-button"
+            style="
+              display:inline-block;
+              width:auto;
+              padding:14px 28px;
+            "
+          >
+            Start Planning ✦
+          </a>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

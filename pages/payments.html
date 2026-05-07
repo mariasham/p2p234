@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Payments | Exploratour</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page-shell">
+        <div class="site-card">
+
+            <!-- ================= NAV ================= -->
+
+            <header class="topbar">
+
+                <a href="../index.html" class="brand">
+                    <span class="brand-mark">✦</span>
+                    <span class="brand-text">Exploratour</span>
+                </a>
+
+                <div class="topbar-right">
+
+                    <a href="login.html" class="text-link">
+                        Log In
+                    </a>
+
+                    <a href="register.html" class="button-light">
+                        Sign Up
+                    </a>
+
+                    <button class="hamburger" id="menuBtn">
+                        ☰
+                    </button>
+
+                </div>
+
+                <nav class="mobile-menu" id="mobileMenu">
+
+                    <div class="menu-section">
+                        <p>Explore</p>
+
+                        <a href="destinations.html">Destinations</a>
+                        <a href="country.html">Country</a>
+                        <a href="cityguide.html">City Guide</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="hiddengems.html">Hidden Gems</a>
+                        <a href="food.html">Food</a>
+                        <a href="videos.html">Videos</a>
+                        <a href="weather.html">Weather</a>
+                        <a href="map.html">Map</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Plan</p>
+
+                        <a href="booking.html">Booking</a>
+                        <a href="flights.html">Flights</a>
+                        <a href="hotels.html">Hotels</a>
+                        <a href="transportation.html">Transportation</a>
+                        <a href="itinerary.html">Itinerary</a>
+                        <a href="budget.html">Budget</a>
+                        <a href="checklist.html">Checklist</a>
+                        <a href="deals.html">Deals</a>
+                        <a href="safety.html">Safety</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Account</p>
+
+                        <a href="account.html">Account</a>
+                        <a href="savedtrips.html">Saved Trips</a>
+                        <a href="payments.html">Payments</a>
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Help</p>
+
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="support.html">Support</a>
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <!-- ================= PAGE CONTENT ================= -->
+
+            <main style="padding:120px 30px 80px;">
+
+                <!-- HERO -->
+
+                <section style="text-align:center; margin-bottom:50px;">
+
+                    <h1 style="
+                        font-size:4rem;
+                        color:#805690;
+                        font-family:Georgia, serif;
+                        margin-bottom:15px;
+                    ">
+                        Payment Details ✨
+                    </h1>
+
+                    <p style="
+                        max-width:720px;
+                        margin:0 auto;
+                        color:#6a7076;
+                        line-height:1.8;
+                        font-size:1.05rem;
+                    ">
+                        This is the final step before everything becomes real.
+                        Flights, hotels, plans, memories —
+                        this is where it all starts coming together.
+                    </p>
+
+                </section>
+
+                <!-- MAIN GRID -->
+
+                <section class="grid-layout" style="
+                    align-items:start;
+                    gap:30px;
+                ">
+
+                    <!-- PAYMENT FORM -->
+
+                    <div class="form-card" style="
+                        max-width:none;
+                        width:100%;
+                        background:#fffdfd;
+                        border:2px solid #f9ceee;
+                    ">
+
+                        <h2 style="
+                            color:#805690;
+                            margin-bottom:10px;
+                        ">
+                            Payment Information
+                        </h2>
+
+                        <p style="
+                            color:#6a7076;
+                            margin-bottom:25px;
+                            line-height:1.7;
+                        ">
+                            Your trip is almost confirmed ✦
+                        </p>
+
+                        <form action="success.html">
+
+                            <label for="fullname">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="fullname"
+                                placeholder="Name on card"
+                                required
+                            >
+
+                            <label for="card">
+                                Card Number
+                            </label>
+
+                            <input
+                                type="text"
+                                id="card"
+                                placeholder="1234 5678 9012 3456"
+                                maxlength="19"
+                                required
+                            >
+
+                            <!-- ROW -->
+
+                            <div style="
+                                display:grid;
+                                grid-template-columns:1fr 1fr;
+                                gap:15px;
+                            ">
+
+                                <div>
+
+                                    <label for="exp">
+                                        Expiration Date
+                                    </label>
+
+                                    <input
+                                        type="month"
+                                        id="exp"
+                                        required
+                                    >
+
+                                </div>
+
+                                <div>
+
+                                    <label for="cvv">
+                                        CVV
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="cvv"
+                                        placeholder="123"
+                                        maxlength="4"
+                                        required
+                                    >
+
+                                </div>
+
+                            </div>
+
+                            <label for="address">
+                                Billing Address
+                            </label>
+
+                            <input
+                                type="text"
+                                id="address"
+                                placeholder="Street address"
+                                required
+                            >
+
+                            <label for="country">
+                                Billing Country
+                            </label>
+
+                            <select id="country" required>
+                                <option value="">Select country</option>
+                                <option>United States</option>
+                                <option>Canada</option>
+                                <option>United Kingdom</option>
+                                <option>Japan</option>
+                                <option>Italy</option>
+                                <option>France</option>
+                            </select>
+
+                            <!-- SAVE CARD -->
+
+                            <div style="
+                                display:flex;
+                                align-items:center;
+                                gap:10px;
+                                margin-top:18px;
+                            ">
+
+                                <input type="checkbox" id="saveCard">
+
+                                <label for="saveCard" style="
+                                    margin:0;
+                                    font-weight:500;
+                                    color:#6a7076;
+                                ">
+                                    Save payment details for future bookings
+                                </label>
+
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="submit-button"
+                                style="
+                                    margin-top:28px;
+                                    background:linear-gradient(135deg, #d46f93, #805690);
+                                    font-size:1rem;
+                                "
+                            >
+                                Confirm Payment ✦
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                    <!-- SUMMARY SIDE -->
+
+                    <div style="
+                        display:flex;
+                        flex-direction:column;
+                        gap:25px;
+                    ">
+
+                        <!-- ORDER SUMMARY -->
+
+                        <div class="info-card" style="
+                            background:#fff8fc;
+                            border:2px solid #f9ceee;
+                        ">
+
+                            <div class="card-body">
+
+                                <h3 style="
+                                    color:#805690;
+                                    margin-bottom:18px;
+                                ">
+                                    Trip Summary
+                                </h3>
+
+                                <div style="
+                                    display:flex;
+                                    justify-content:space-between;
+                                    margin-bottom:12px;
+                                    color:#6a7076;
+                                ">
+                                    <span>Flight</span>
+                                    <span>$899</span>
+                                </div>
+
+                                <div style="
+                                    display:flex;
+                                    justify-content:space-between;
+                                    margin-bottom:12px;
+                                    color:#6a7076;
+                                ">
+                                    <span>Hotel</span>
+                                    <span>$640</span>
+                                </div>
+
+                                <div style="
+                                    display:flex;
+                                    justify-content:space-between;
+                                    margin-bottom:12px;
+                                    color:#6a7076;
+                                ">
+                                    <span>Taxes & Fees</span>
+                                    <span>$142</span>
+                                </div>
+
+                                <hr style="
+                                    border:none;
+                                    border-top:1px solid #f1d9ea;
+                                    margin:18px 0;
+                                ">
+
+                                <div style="
+                                    display:flex;
+                                    justify-content:space-between;
+                                    font-weight:bold;
+                                    font-size:1.1rem;
+                                    color:#805690;
+                                ">
+                                    <span>Total</span>
+                                    <span>$1,681</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- SECURITY -->
+
+                        <div class="info-card" style="
+                            background:#fdfcff;
+                            border:2px solid #e0cdff;
+                        ">
+
+                            <div class="card-body">
+
+                                <h3 style="
+                                    color:#805690;
+                                    margin-bottom:14px;
+                                ">
+                                    Secure Checkout 🔒
+                                </h3>
+
+                                <p style="
+                                    color:#6a7076;
+                                    line-height:1.7;
+                                    margin-bottom:14px;
+                                ">
+                                    Your information is encrypted and protected during checkout.
+                                </p>
+
+                                <div style="
+                                    display:flex;
+                                    gap:10px;
+                                    flex-wrap:wrap;
+                                ">
+
+                                    <span class="card-tag">
+                                        Visa
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Mastercard
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Amex
+                                    </span>
+
+                                    <span class="card-tag">
+                                        PayPal
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- NOTE -->
+
+                        <div style="
+                            background:#fdf1cd;
+                            padding:22px;
+                            border-radius:18px;
+                            color:#805690;
+                            line-height:1.8;
+                        ">
+
+                            ✦ This is a demo payment page.
+                            No real transactions are processed.
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

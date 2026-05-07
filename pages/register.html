@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-shell">
+    <div class="site-card">
+
+      <header class="topbar">
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+        <div class="topbar-right">
+          <a href="login.html" class="text-link">Log In</a>
+          <a href="register.html" class="button-light">Sign Up</a>
+
+          <button class="hamburger" id="menuBtn">☰</button>
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+          <div class="menu-section">
+            <p>Explore</p>
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+        </nav>
+      </header>
+
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px; display:flex; justify-content:center;">
+
+        <div class="form-card">
+          <h1 class="page-title">Create an account</h1>
+
+          <p class="page-copy">
+            Start saving destinations, organizing your ideas, and turning
+            your travel plans into something real.
+          </p>
+
+          <form action="success.html">
+
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="traveldate">Preferred Travel Date</label>
+            <input type="date" id="traveldate" name="traveldate" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required minlength="6">
+
+            <button type="submit" class="submit-button">Register</button>
+
+            <!-- EXTRA LINK -->
+            <p style="margin-top:15px; text-align:center; font-size:0.95rem;">
+              Already have an account?
+              <a href="login.html" style="color:#2e5e3a; font-weight:600;">
+                Log in
+              </a>
+            </p>
+
+          </form>
+
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Booking | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+          <a href="login.html" class="text-link">Log In</a>
+          <a href="register.html" class="button-light">Sign Up</a>
+
+          <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+            ☰
+          </button>
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:18px;
+          ">
+            Book Your Trip ✈️
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.9;
+            font-size:1.1rem;
+          ">
+            This is where everything starts coming together.
+            You’ve explored, planned, and now you’re ready
+            to turn inspiration into something real.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            src="../images/booking.jpg"
+            alt="Travel planning aesthetic"
+            style="
+              width:100%;
+              height:340px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- BOOKING LAYOUT -->
+
+        <section style="
+          display:grid;
+          grid-template-columns:1.2fr 0.8fr;
+          gap:30px;
+          align-items:start;
+        ">
+
+          <!-- FORM -->
+
+          <div class="form-card" style="
+            max-width:none;
+            width:100%;
+          ">
+
+            <h2 style="
+              color:#d46f93;
+              margin-bottom:10px;
+            ">
+              Booking Details
+            </h2>
+
+            <p class="page-copy">
+              Plan your stay, estimate your trip cost,
+              and customize the experience you want.
+            </p>
+
+            <form action="success.html">
+
+              <label for="fullname">Full Name</label>
+              <input 
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Your full name"
+                required
+              >
+
+              <label for="destination">Destination</label>
+              <input 
+                type="text"
+                id="destination"
+                name="destination"
+                placeholder="Where are you going?"
+                required
+              >
+
+              <label for="dates">Travel Dates</label>
+
+              <input
+                type="date"
+                id="startDate"
+                name="dates"
+                required
+                onchange="calculateTotal()"
+              >
+
+              <input
+                type="date"
+                id="endDate"
+                name="dates"
+                required
+                onchange="calculateTotal()"
+              >
+
+              <label for="travelers">Number of Travelers</label>
+
+              <input
+                type="number"
+                id="travelers"
+                name="travelers"
+                min="1"
+                value="1"
+                required
+                onchange="calculateTotal()"
+              >
+
+              <label for="hotel">Hotel Preference</label>
+
+              <input
+                type="text"
+                id="hotel"
+                name="hotel"
+                placeholder="Hotel or type of stay"
+              >
+
+              <label for="style">Travel Style</label>
+
+              <select
+                id="style"
+                name="style"
+                onchange="calculateTotal()"
+              >
+                <option value="">Select a style</option>
+                <option value="relax">🌊 Relaxed</option>
+                <option value="adventure">⛰️ Adventure</option>
+                <option value="city">🌆 City / Culture</option>
+                <option value="luxury">✨ Luxury</option>
+              </select>
+
+              <!-- TOTAL BOX -->
+
+              <div style="
+                background:#fff7fb;
+                padding:20px;
+                border-radius:16px;
+                margin-top:25px;
+                text-align:center;
+              ">
+
+                <p style="
+                  margin-bottom:8px;
+                  color:#6a7076;
+                ">
+                  Estimated Trip Total
+                </p>
+
+                <h2 style="
+                  margin:0;
+                  color:#805690;
+                  font-size:2.5rem;
+                ">
+                  $<span id="total">0</span>
+                </h2>
+
+              </div>
+
+              <button
+                type="submit"
+                class="submit-button"
+                style="margin-top:25px;"
+              >
+                Confirm Booking
+              </button>
+
+            </form>
+
+            <p style="
+              margin-top:18px;
+              text-align:center;
+              font-size:0.95rem;
+              color:#805690;
+            ">
+              You’re one step closer to your trip ✦
+            </p>
+
+          </div>
+
+          <!-- SIDE PANEL -->
+
+          <div style="
+            display:flex;
+            flex-direction:column;
+            gap:25px;
+          ">
+
+            <!-- TRAVEL TIP -->
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🌸 Travel Tip
+                </h3>
+
+                <p>
+                  Booking flexible dates often saves more money
+                  than choosing cheaper hotels.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- STYLE GUIDE -->
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  ✈️ Style Guide
+                </h3>
+
+                <p>
+                  Relaxed trips focus on slower pacing and comfort,
+                  while luxury trips prioritize premium experiences
+                  and accommodations.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- QUOTE -->
+
+            <div style="
+              background:#fffdf8;
+              border-left:8px solid #f89e9d;
+              padding:25px;
+              border-radius:18px;
+            ">
+
+              <p style="
+                margin:0;
+                color:#805690;
+                font-style:italic;
+                line-height:1.8;
+              ">
+                “The best trips aren’t always the most perfect ones —
+                they’re the ones you actually remember.”
+              </p>
+
+            </div>
+
+            <!-- MINI IMAGE -->
+
+            <img
+              src="../images/passport.jpg"
+              alt="Passport and boarding pass aesthetic"
+              style="
+                width:100%;
+                border-radius:20px;
+                object-fit:cover;
+                height:220px;
+                box-shadow:0 10px 25px rgba(0,0,0,0.1);
+              "
+            >
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT ================= -->
+
+  <script>
+
+    function getNights() {
+
+      const start = document.getElementById("startDate").value;
+      const end = document.getElementById("endDate").value;
+
+      if (!start || !end) return 0;
+
+      const startDate = new Date(start);
+      const endDate = new Date(end);
+
+      const diffTime = endDate - startDate;
+
+      const nights = diffTime / (1000 * 60 * 60 * 24);
+
+      return nights > 0 ? nights : 0;
+    }
+
+    function calculateTotal() {
+
+      let total = 0;
+
+      const nights = getNights();
+
+      const style = document.getElementById("style").value;
+
+      const travelers =
+        parseInt(document.getElementById("travelers").value) || 1;
+
+      let costPerNight = 0;
+
+      if (style === "relax") {
+        costPerNight = 100;
+      }
+
+      else if (style === "adventure") {
+        costPerNight = 150;
+      }
+
+      else if (style === "city") {
+        costPerNight = 180;
+      }
+
+      else if (style === "luxury") {
+        costPerNight = 300;
+      }
+
+      if (nights > 0 && costPerNight > 0) {
+        total = nights * costPerNight * travelers;
+      }
+
+      document.getElementById("total").innerText = total;
+
+      return total;
+    }
+
+  </script>
+
+</body>
+</html>

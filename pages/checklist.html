@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Checklist | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:18px;
+          ">
+            Travel Checklist 🧳
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.9;
+            font-size:1.1rem;
+          ">
+            The small things are usually what people forget.
+            Having everything ready makes your trip smoother,
+            calmer, and way less stressful.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            src="../images/checklist.jpg"
+            alt="Travel packing aesthetic"
+            style="
+              width:100%;
+              height:340px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUICK REMINDER -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:30px;
+          border-radius:20px;
+          max-width:900px;
+          margin:0 auto 60px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.08rem;
+          ">
+            ✈️ A good trip usually starts before you even leave.
+            Being prepared gives you more time to actually enjoy where you are.
+          </p>
+
+        </section>
+
+        <!-- CHECKLIST GRID -->
+
+        <section class="grid-layout" style="margin-bottom:50px;">
+
+          <!-- BEFORE YOU LEAVE -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                📋 Before You Leave
+              </h3>
+
+              <ul class="checklist">
+
+                <li>
+                  <input type="checkbox">
+                  Passport or ID
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Flight confirmation
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Hotel reservation
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Travel insurance
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Emergency contacts
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Download offline maps
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <!-- PACKING -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                👕 Packing Essentials
+              </h3>
+
+              <ul class="checklist">
+
+                <li>
+                  <input type="checkbox">
+                  Clothes for the weather
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Toiletries
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Chargers
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Comfortable shoes
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Medications
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Sunglasses / accessories
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+          <!-- EXTRAS -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                🌸 Extras
+              </h3>
+
+              <ul class="checklist">
+
+                <li>
+                  <input type="checkbox">
+                  Snacks
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Headphones
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Portable charger
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Backup cash/card
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Camera
+                </li>
+
+                <li>
+                  <input type="checkbox">
+                  Journal or notebook
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- PROGRESS SECTION -->
+
+        <section style="
+          max-width:850px;
+          margin:0 auto 60px;
+          text-align:center;
+          background:#fffdf8;
+          padding:35px;
+          border-radius:24px;
+          box-shadow:0 8px 25px rgba(128,86,144,0.08);
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:18px;
+          ">
+            Why Checklists Matter
+          </h2>
+
+          <p style="
+            color:#5e646b;
+            line-height:1.9;
+          ">
+            Traveling already comes with enough unpredictability.
+            The more prepared you are beforehand,
+            the more freedom you have once you arrive.
+          </p>
+
+        </section>
+
+        <!-- BUTTONS -->
+
+        <div style="
+          display:flex;
+          justify-content:center;
+          gap:18px;
+          flex-wrap:wrap;
+        ">
+
+          <button
+            onclick="resetChecklist()"
+            class="submit-button"
+            style="
+              max-width:240px;
+            "
+          >
+            Reset Checklist
+          </button>
+
+          <a
+            href="booking.html"
+            style="
+              background:#f89e9d;
+              color:white;
+              padding:14px 24px;
+              border-radius:14px;
+              font-weight:700;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+            "
+          >
+            Continue Planning
+          </a>
+
+        </div>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>

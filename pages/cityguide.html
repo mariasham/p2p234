@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>City Guide | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1
+            id="cityTitle"
+            style="
+              font-size:4rem;
+              color:#805690;
+              font-family:Georgia, serif;
+              margin-bottom:18px;
+            "
+          >
+            City
+          </h1>
+
+          <p
+            id="cityDesc"
+            style="
+              color:#6a7076;
+              max-width:760px;
+              margin:0 auto;
+              line-height:1.9;
+              font-size:1.1rem;
+            "
+          >
+          Which city do you have in mind?
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            id="cityImage"
+            src="../images/city.jpg"
+            alt="City aesthetic"
+            style="
+              width:100%;
+              height:380px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUICK FACTS -->
+
+        <section class="grid-layout" style="margin-bottom:60px;">
+
+          <div class="info-card">
+
+            <div class="card-body" style="text-align:center;">
+
+              <h2 style="
+                color:#d46f93;
+                margin-bottom:10px;
+              ">
+                🌤️ Best Season
+              </h2>
+
+              <p>
+                Spring & Early Fall
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <div class="card-body" style="text-align:center;">
+
+              <h2 style="
+                color:#d46f93;
+                margin-bottom:10px;
+              ">
+                ✈️ Trip Style
+              </h2>
+
+              <p>
+                Culture • Food • Exploration
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <div class="card-body" style="text-align:center;">
+
+              <h2 style="
+                color:#d46f93;
+                margin-bottom:10px;
+              ">
+                🌸 Atmosphere
+              </h2>
+
+              <p>
+                Walkable, vibrant, unforgettable
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- MAIN CONTENT GRID -->
+
+        <section class="grid-layout" style="margin-bottom:60px;">
+
+          <!-- THINGS TO DO -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                🎒 Things To Do
+              </h3>
+
+              <ul
+                id="thingsList"
+                style="
+                  line-height:2;
+                  padding-left:20px;
+                "
+              ></ul>
+
+            </div>
+
+          </div>
+
+          <!-- FOOD -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                🍝 Food & Favorite Spots
+              </h3>
+
+              <ul
+                id="foodList"
+                style="
+                  line-height:2;
+                  padding-left:20px;
+                "
+              ></ul>
+
+            </div>
+
+          </div>
+
+          <!-- TIPS -->
+
+          <div class="info-card">
+
+            <div class="card-body">
+
+              <h3 style="
+                color:#d46f93;
+                margin-bottom:18px;
+              ">
+                🌸 Local Tips
+              </h3>
+
+              <ul
+                id="tipsList"
+                style="
+                  line-height:2;
+                  padding-left:20px;
+                "
+              ></ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- QUOTE SECTION -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:900px;
+          margin:0 auto 60px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.15rem;
+            font-style:italic;
+          ">
+            “The best parts of a city usually aren’t the landmarks —
+            they’re the moments in between.”
+          </p>
+
+        </section>
+
+        <!-- MINI IMAGE ROW -->
+
+        <section class="grid-layout" style="margin-bottom:60px;">
+
+          <div class="info-card">
+
+            <img
+              src="../images/cafe.jpg"
+              alt="Local cafe"
+              style="
+                width:100%;
+                height:220px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <h3 style="color:#805690;">
+                ☕ Café Stops
+              </h3>
+
+              <p>
+                Small places usually create the best memories.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <img
+              src="../images/nightcity.jpg"
+              alt="City at night"
+              style="
+                width:100%;
+                height:220px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <h3 style="color:#805690;">
+                🌃 Night Atmosphere
+              </h3>
+
+              <p>
+                Cities feel completely different after sunset.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="info-card">
+
+            <img
+              src="../images/foodtable.jpg"
+              alt="Travel food aesthetic"
+              style="
+                width:100%;
+                height:220px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <h3 style="color:#805690;">
+                🍷 Local Food
+              </h3>
+
+              <p>
+                The best way to understand a place is through its food.
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- CTA -->
+
+        <section style="text-align:center;">
+
+          <p style="
+            color:#6a7076;
+            margin-bottom:25px;
+            font-size:1.05rem;
+          ">
+            Ready to start building your trip?
+          </p>
+
+          <div style="
+            display:flex;
+            justify-content:center;
+            gap:18px;
+            flex-wrap:wrap;
+          ">
+
+            <a
+              href="booking.html"
+              style="
+                background:#f89e9d;
+                color:white;
+                padding:14px 24px;
+                border-radius:14px;
+                font-weight:700;
+              "
+            >
+              Book Your Trip
+            </a>
+
+            <a
+              href="map.html"
+              style="
+                border:2px solid #805690;
+                color:#805690;
+                padding:14px 24px;
+                border-radius:14px;
+                font-weight:700;
+              "
+            >
+              Explore The Map
+            </a>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>

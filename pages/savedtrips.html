@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Saved Trips | Exploratour</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page-shell">
+        <div class="site-card">
+
+            <!-- ================= NAV ================= -->
+
+            <header class="topbar">
+
+                <a href="../index.html" class="brand">
+                    <span class="brand-mark">✦</span>
+                    <span class="brand-text">Exploratour</span>
+                </a>
+
+                <div class="topbar-right">
+
+                    <a href="login.html" class="text-link">
+                        Log In
+                    </a>
+
+                    <a href="register.html" class="button-light">
+                        Sign Up
+                    </a>
+
+                    <button class="hamburger" id="menuBtn">
+                        ☰
+                    </button>
+
+                </div>
+
+                <nav class="mobile-menu" id="mobileMenu">
+
+                    <div class="menu-section">
+                        <p>Explore</p>
+
+                        <a href="destinations.html">Destinations</a>
+                        <a href="country.html">Country</a>
+                        <a href="cityguide.html">City Guide</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="hiddengems.html">Hidden Gems</a>
+                        <a href="food.html">Food</a>
+                        <a href="videos.html">Videos</a>
+                        <a href="weather.html">Weather</a>
+                        <a href="map.html">Map</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Plan</p>
+
+                        <a href="booking.html">Booking</a>
+                        <a href="flights.html">Flights</a>
+                        <a href="hotels.html">Hotels</a>
+                        <a href="transportation.html">Transportation</a>
+                        <a href="itinerary.html">Itinerary</a>
+                        <a href="budget.html">Budget</a>
+                        <a href="checklist.html">Checklist</a>
+                        <a href="deals.html">Deals</a>
+                        <a href="safety.html">Safety</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Account</p>
+
+                        <a href="account.html">Account</a>
+                        <a href="savedtrips.html">Saved Trips</a>
+                        <a href="payments.html">Payments</a>
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Help</p>
+
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="support.html">Support</a>
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <!-- ================= PAGE CONTENT ================= -->
+
+            <main style="padding:120px 30px 80px;">
+
+                <!-- HERO -->
+
+                <section style="text-align:center; margin-bottom:55px;">
+
+                    <div style="
+                        display:inline-block;
+                        background:#fdf1cd;
+                        color:#805690;
+                        padding:10px 18px;
+                        border-radius:999px;
+                        font-weight:700;
+                        margin-bottom:20px;
+                    ">
+                        Your Future Adventures ✦
+                    </div>
+
+                    <h1 style="
+                        font-size:4rem;
+                        color:#805690;
+                        font-family:Georgia, serif;
+                        margin-bottom:18px;
+                    ">
+                        Saved Trips
+                    </h1>
+
+                    <p style="
+                        max-width:760px;
+                        margin:0 auto;
+                        color:#6a7076;
+                        line-height:1.9;
+                        font-size:1.05rem;
+                    ">
+                        The places you keep thinking about,
+                        the ones you bookmarked for later,
+                        and the trips that still feel unfinished in your mind.
+                    </p>
+
+                </section>
+
+                <!-- FEATURED IMAGE -->
+
+                <section style="margin-bottom:55px;">
+
+                    <img
+                        src="../images/saved-trips.jpg"
+                        alt="Saved trips"
+                        style="
+                            width:100%;
+                            height:420px;
+                            object-fit:cover;
+                            border-radius:28px;
+                            box-shadow:0 18px 40px rgba(0,0,0,0.12);
+                        "
+                    >
+
+                </section>
+
+                <!-- SAVED TRIPS -->
+
+                <section>
+
+                    <div class="grid-layout">
+
+                        <!-- ROME -->
+
+                        <div class="info-card" style="
+                            background:#fff8fc;
+                            overflow:hidden;
+                        ">
+
+                            <img
+                                src="../images/rome.jpg"
+                                alt="Rome"
+                                style="
+                                    width:100%;
+                                    height:220px;
+                                    object-fit:cover;
+                                "
+                            >
+
+                            <div class="card-body">
+
+                                <div class="card-tag">
+                                    Italy 🇮🇹
+                                </div>
+
+                                <h3 style="color:#805690;">
+                                    Rome
+                                </h3>
+
+                                <p>
+                                    A slower kind of city —
+                                    history, quiet streets,
+                                    espresso in the morning,
+                                    and nights that stretch longer than expected.
+                                </p>
+
+                                <div style="
+                                    display:flex;
+                                    gap:10px;
+                                    flex-wrap:wrap;
+                                    margin-top:18px;
+                                ">
+
+                                    <span class="card-tag">
+                                        Food
+                                    </span>
+
+                                    <span class="card-tag">
+                                        History
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Walkable
+                                    </span>
+
+                                </div>
+
+                                <a
+                                    href="booking.html"
+                                    class="submit-button"
+                                    style="
+                                        display:inline-block;
+                                        margin-top:20px;
+                                        text-decoration:none;
+                                    "
+                                >
+                                    Continue Planning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- TOKYO -->
+
+                        <div class="info-card" style="
+                            background:#f8fcff;
+                            overflow:hidden;
+                        ">
+
+                            <img
+                                src="../images/tokyo.jpg"
+                                alt="Tokyo"
+                                style="
+                                    width:100%;
+                                    height:220px;
+                                    object-fit:cover;
+                                "
+                            >
+
+                            <div class="card-body">
+
+                                <div class="card-tag">
+                                    Japan 🇯🇵
+                                </div>
+
+                                <h3 style="color:#805690;">
+                                    Tokyo
+                                </h3>
+
+                                <p>
+                                    Fast, layered, and constantly moving.
+                                    The kind of place that feels overwhelming
+                                    at first and unforgettable later.
+                                </p>
+
+                                <div style="
+                                    display:flex;
+                                    gap:10px;
+                                    flex-wrap:wrap;
+                                    margin-top:18px;
+                                ">
+
+                                    <span class="card-tag">
+                                        City Life
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Food
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Culture
+                                    </span>
+
+                                </div>
+
+                                <a
+                                    href="booking.html"
+                                    class="submit-button"
+                                    style="
+                                        display:inline-block;
+                                        margin-top:20px;
+                                        text-decoration:none;
+                                    "
+                                >
+                                    Continue Planning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                        <!-- MARRAKECH -->
+
+                        <div class="info-card" style="
+                            background:#fffdf7;
+                            overflow:hidden;
+                        ">
+
+                            <img
+                                src="../images/morocco.jpg"
+                                alt="Marrakech"
+                                style="
+                                    width:100%;
+                                    height:220px;
+                                    object-fit:cover;
+                                "
+                            >
+
+                            <div class="card-body">
+
+                                <div class="card-tag">
+                                    Morocco 🇲🇦
+                                </div>
+
+                                <h3 style="color:#805690;">
+                                    Marrakech
+                                </h3>
+
+                                <p>
+                                    Color, movement, markets,
+                                    and a rhythm completely different
+                                    from what you're used to.
+                                </p>
+
+                                <div style="
+                                    display:flex;
+                                    gap:10px;
+                                    flex-wrap:wrap;
+                                    margin-top:18px;
+                                ">
+
+                                    <span class="card-tag">
+                                        Markets
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Architecture
+                                    </span>
+
+                                    <span class="card-tag">
+                                        Adventure
+                                    </span>
+
+                                </div>
+
+                                <a
+                                    href="booking.html"
+                                    class="submit-button"
+                                    style="
+                                        display:inline-block;
+                                        margin-top:20px;
+                                        text-decoration:none;
+                                    "
+                                >
+                                    Continue Planning
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- WHY SAVE -->
+
+                <section style="margin-top:65px;">
+
+                    <h2 style="
+                        text-align:center;
+                        margin-bottom:30px;
+                        color:#805690;
+                        font-size:2rem;
+                    ">
+                        Why Save Trips?
+                    </h2>
+
+                    <div class="grid-layout">
+
+                        <div class="info-card" style="background:#fff8fc;">
+
+                            <div class="card-body">
+
+                                <h3>
+                                    Keep Everything Together
+                                </h3>
+
+                                <p>
+                                    You don’t have to remember every idea all at once.
+                                    Save places that matter before they disappear from your mind.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-card" style="background:#f7fcff;">
+
+                            <div class="card-body">
+
+                                <h3>
+                                    Compare Different Trips
+                                </h3>
+
+                                <p>
+                                    Some places fit who you are right now
+                                    better than others — and this helps you see that clearly.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-card" style="background:#fffdf7;">
+
+                            <div class="card-body">
+
+                                <h3>
+                                    Come Back When You're Ready
+                                </h3>
+
+                                <p>
+                                    Not every trip has to happen immediately.
+                                    Some stay with you until the timing finally makes sense.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <!-- CTA -->
+
+                <section style="
+                    margin-top:65px;
+                    background:linear-gradient(135deg, #f9ceee, #c1f0fb);
+                    padding:45px;
+                    border-radius:28px;
+                    text-align:center;
+                ">
+
+                    <h2 style="
+                        color:#805690;
+                        margin-bottom:18px;
+                        font-size:2rem;
+                    ">
+                        Ready to Turn One Into Reality?
+                    </h2>
+
+                    <p style="
+                        max-width:650px;
+                        margin:0 auto 28px;
+                        color:#5e646b;
+                        line-height:1.8;
+                    ">
+                        Start building your itinerary,
+                        compare flights and hotels,
+                        and turn your saved ideas into something real.
+                    </p>
+
+                    <a
+                        href="destinations.html"
+                        class="submit-button"
+                        style="
+                            display:inline-block;
+                            text-decoration:none;
+                            background:linear-gradient(135deg, #d46f93, #805690);
+                            padding:14px 26px;
+                        "
+                    >
+                        Explore More Destinations ✦
+                    </a>
+
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

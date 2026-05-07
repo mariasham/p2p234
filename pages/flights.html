@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Flights | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:15px;
+          ">
+            Flights ✈️
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:720px;
+            margin:0 auto;
+            line-height:1.8;
+            font-size:1.08rem;
+          ">
+            This is where the trip starts to feel real.
+            You stop imagining it and start choosing what actually works for you.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:55px;">
+
+          <img
+            src="../images/airport.jpg"
+            alt="Airport travel"
+            style="
+              width:100%;
+              height:340px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUICK INFO -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:950px;
+          margin:0 auto 55px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.02rem;
+          ">
+            ✦ Sometimes the hardest part is choosing to go.
+            Everything after that becomes details.
+          </p>
+
+        </section>
+
+        <!-- FLIGHT SEARCH + SIDE INFO -->
+
+        <section style="
+          display:grid;
+          grid-template-columns:1.2fr 0.8fr;
+          gap:30px;
+          align-items:start;
+        ">
+
+          <!-- FORM -->
+
+          <div class="form-card" style="
+            max-width:none;
+            background:#ffffff;
+          ">
+
+            <h2 class="page-title" style="
+              color:#805690;
+              margin-bottom:10px;
+            ">
+              Search Flights
+            </h2>
+
+            <p class="page-copy">
+              Compare ideas, dates, and destinations to figure out what makes the most sense for your trip.
+            </p>
+
+            <form action="booking.html">
+
+              <label for="from">
+                Departure City
+              </label>
+
+              <input
+                id="from"
+                type="text"
+                placeholder="Atlanta, New York, Paris..."
+                required
+              >
+
+              <label for="to">
+                Destination
+              </label>
+
+              <input
+                id="to"
+                type="text"
+                placeholder="Tokyo, Rome, Marrakech..."
+                required
+              >
+
+              <div style="
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:14px;
+              ">
+
+                <div>
+
+                  <label for="depart">
+                    Departure Date
+                  </label>
+
+                  <input
+                    id="depart"
+                    type="date"
+                    required
+                  >
+
+                </div>
+
+                <div>
+
+                  <label for="return">
+                    Return Date
+                  </label>
+
+                  <input
+                    id="return"
+                    type="date"
+                  >
+
+                </div>
+
+              </div>
+
+              <div style="
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:14px;
+                margin-top:15px;
+              ">
+
+                <div>
+
+                  <label for="passengers">
+                    Passengers
+                  </label>
+
+                  <input
+                    id="passengers"
+                    type="number"
+                    min="1"
+                    value="1"
+                    required
+                  >
+
+                </div>
+
+                <div>
+
+                  <label for="class">
+                    Flight Class
+                  </label>
+
+                  <select id="class">
+
+                    <option>Economy</option>
+                    <option>Premium Economy</option>
+                    <option>Business</option>
+                    <option>First Class</option>
+
+                  </select>
+
+                </div>
+
+              </div>
+
+              <label for="tripstyle" style="margin-top:15px;">
+                Trip Style
+              </label>
+
+              <select id="tripstyle">
+
+                <option>Relaxing</option>
+                <option>Adventure</option>
+                <option>Luxury</option>
+                <option>Food & Culture</option>
+                <option>Solo Travel</option>
+
+              </select>
+
+              <button type="submit" class="submit-button" style="
+                margin-top:25px;
+                background:#f89e9d;
+                color:white;
+                font-size:1rem;
+              ">
+                Search Flights ✦
+              </button>
+
+            </form>
+
+            <p style="
+              margin-top:18px;
+              font-size:0.9rem;
+              color:#805690;
+              text-align:center;
+            ">
+              *This is a demo search. Flight results are not live.
+            </p>
+
+          </div>
+
+          <!-- SIDE CARDS -->
+
+          <div style="
+            display:flex;
+            flex-direction:column;
+            gap:22px;
+          ">
+
+            <!-- TIP CARD -->
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#805690;">
+                  ✈️ Flight Tip
+                </h3>
+
+                <p>
+                  Midweek flights are usually cheaper and less chaotic than weekends.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- DESTINATIONS -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/tokyo.jpg"
+                alt="Tokyo"
+                style="
+                  width:100%;
+                  height:180px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Trending
+                </span>
+
+                <h3 style="color:#805690;">
+                  Tokyo, Japan 🇯🇵
+                </h3>
+
+                <p>
+                  Fast nights, quiet mornings, and endless things to explore.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- SECOND DESTINATION -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/rome.jpg"
+                alt="Rome"
+                style="
+                  width:100%;
+                  height:180px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Popular
+                </span>
+
+                <h3 style="color:#805690;">
+                  Rome, Italy 🇮🇹
+                </h3>
+
+                <p>
+                  Espresso, old streets, and the kind of trip you think about forever.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- BOTTOM SECTION -->
+
+        <section style="
+          margin-top:70px;
+          text-align:center;
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:15px;
+          ">
+            Every trip starts with one ticket.
+          </h2>
+
+          <p style="
+            color:#6a7076;
+            max-width:700px;
+            margin:0 auto;
+            line-height:1.8;
+          ">
+            You don’t need everything figured out yet.
+            You just need somewhere to begin.
+          </p>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

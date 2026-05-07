@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Continents | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn" aria-label="Open navigation menu">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= MAIN CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:18px;
+          ">
+            Explore by Continent 🌍
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.9;
+            font-size:1.1rem;
+          ">
+            Every place feels different.
+            Some cities move fast.
+            Some slow you down.
+            Start broad, then find the places that actually feel like you.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:60px;">
+
+          <img
+            src="../images/world.png"
+            alt="Travel world aesthetic"
+            style="
+              width:100%;
+              height:350px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUICK SECTION -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:950px;
+          margin:0 auto 60px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.1rem;
+          ">
+            ✦ Travel becomes more meaningful when you stop choosing places
+            just because they’re popular — and start choosing places
+            that match the kind of experience you actually want.
+          </p>
+
+        </section>
+
+        <!-- CONTINENT GRID -->
+
+        <section class="grid-layout">
+
+          <!-- EUROPE -->
+
+          <a href="country.html?continent=europe" class="info-card">
+
+            <img
+              src="../images/europe.png"
+              alt="Europe"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Culture & History
+              </span>
+
+              <h3 style="color:#805690;">
+                Europe
+              </h3>
+
+              <p>
+                Old streets, café mornings, art, and slower living.
+              </p>
+
+            </div>
+
+          </a>
+
+          <!-- ASIA -->
+
+          <a href="country.html?continent=asia" class="info-card">
+
+            <img
+              src="../images/asia.png"
+              alt="Asia"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Fast & Vibrant
+              </span>
+
+              <h3 style="color:#805690;">
+                Asia
+              </h3>
+
+              <p>
+                Tradition, movement, technology, and unforgettable cities.
+              </p>
+
+            </div>
+
+          </a>
+
+          <!-- AFRICA -->
+
+          <a href="country.html?continent=africa" class="info-card">
+
+            <img
+              src="../images/africa.png"
+              alt="Africa"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Energy & Nature
+              </span>
+
+              <h3 style="color:#805690;">
+                Africa
+              </h3>
+
+              <p>
+                Rhythm, color, wildlife, and experiences that feel alive.
+              </p>
+
+            </div>
+
+          </a>
+
+          <!-- NORTH AMERICA -->
+
+          <div class="info-card">
+
+            <img
+              src="../images/northamerica.png"
+              alt="North America"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+                opacity:0.9;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Coming Soon
+              </span>
+
+              <h3 style="color:#805690;">
+                North America
+              </h3>
+
+              <p>
+                National parks, cities, road trips, and coastlines.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- SOUTH AMERICA -->
+
+          <div class="info-card">
+
+            <img
+              src="../images/southamerica.png"
+              alt="South America"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+                opacity:0.9;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Coming Soon
+              </span>
+
+              <h3 style="color:#805690;">
+                South America
+              </h3>
+
+              <p>
+                Mountains, music, color, beaches, and nightlife.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- AUSTRALIA -->
+
+          <div class="info-card">
+
+            <img
+              src="../images/australia.png"
+              alt="Australia"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+                opacity:0.9;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Coming Soon
+              </span>
+
+              <h3 style="color:#805690;">
+                Australia
+              </h3>
+
+              <p>
+                Coastal cities, oceans, wildlife, and outdoor adventure.
+              </p>
+
+            </div>
+
+          </div>
+
+          <!-- ANTARCTICA -->
+
+          <div class="info-card">
+
+            <img
+              src="../images/antarctica.png"
+              alt="Antarctica"
+              style="
+                width:100%;
+                height:240px;
+                object-fit:cover;
+                opacity:0.9;
+              "
+            >
+
+            <div class="card-body">
+
+              <span class="card-tag">
+                Coming Soon
+              </span>
+
+              <h3 style="color:#805690;">
+                Antarctica
+              </h3>
+
+              <p>
+                Ice landscapes, isolation, and once-in-a-lifetime travel.
+              </p>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- FINAL CTA -->
+
+        <section style="
+          text-align:center;
+          margin-top:70px;
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:18px;
+          ">
+            Where do you want to start?
+          </h2>
+
+          <p style="
+            color:#6a7076;
+            max-width:700px;
+            margin:0 auto 30px;
+            line-height:1.8;
+          ">
+            Some places change your perspective completely.
+            You just have to choose one first.
+          </p>
+
+          <a
+            href="booking.html"
+            style="
+              background:#f89e9d;
+              color:white;
+              padding:15px 28px;
+              border-radius:14px;
+              font-weight:700;
+              display:inline-block;
+            "
+          >
+            Start Planning ✈️
+          </a>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+</html>

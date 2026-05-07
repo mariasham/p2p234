@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="page-shell">
+
+    <div class="site-card">
+
+      <!-- ================= NAVIGATION ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn">
+            ☰
+          </button>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+
+          </div>
+
+          <div class="menu-section">
+
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+
+          </div>
+
+          <div class="menu-section">
+
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+
+          </div>
+
+          <div class="menu-section">
+
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= CONTENT ================= -->
+
+      <main style="padding:130px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="
+          text-align:center;
+          max-width:760px;
+          margin:0 auto 55px;
+        ">
+
+          <div style="
+            display:inline-block;
+            padding:8px 18px;
+            border-radius:999px;
+            background:#eef6ff;
+            color:#4f6d8f;
+            font-size:0.9rem;
+            font-weight:600;
+            margin-bottom:18px;
+          ">
+            Live Weather Search
+          </div>
+
+          <h1 style="
+            font-size:3.4rem;
+            margin-bottom:18px;
+            color:#2b2b2b;
+          ">
+            Weather ✦
+          </h1>
+
+          <p style="
+            color:#5e646b;
+            line-height:1.9;
+            font-size:1.05rem;
+          ">
+            Weather changes everything —
+            what you pack, where you go,
+            and how your trip actually feels once you arrive.
+          </p>
+
+        </section>
+
+        <!-- SEARCH CARD -->
+
+        <section style="
+          max-width:850px;
+          margin:0 auto 50px;
+          background:white;
+          border-radius:30px;
+          padding:40px;
+          box-shadow:0 10px 30px rgba(0,0,0,0.06);
+        ">
+
+          <h2 style="
+            text-align:center;
+            margin-bottom:25px;
+            color:#4f6d8f;
+          ">
+            Search Any City
+          </h2>
+
+          <div style="
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+            justify-content:center;
+          ">
+
+            <input
+              type="text"
+              id="weatherSearch"
+              placeholder="Enter a city (Tokyo, Rome, Paris)"
+              style="
+                flex:1;
+                min-width:250px;
+                padding:16px;
+                border-radius:16px;
+                border:1px solid #d8dce2;
+                font-size:1rem;
+              "
+            >
+
+            <button
+              onclick="getWeather()"
+              class="submit-button"
+              style="
+                width:auto;
+                padding:16px 26px;
+              "
+            >
+              Check Weather
+            </button>
+
+          </div>
+
+        </section>
+
+        <!-- WEATHER RESULT -->
+
+        <section>
+
+          <div id="weatherResult" style="
+            max-width:850px;
+            margin:0 auto;
+          "></div>
+
+        </section>
+
+        <!-- QUICK CITIES -->
+
+        <section style="margin-top:65px;">
+
+          <h2 style="
+            text-align:center;
+            margin-bottom:30px;
+            color:#4f6d8f;
+          ">
+            Quick Weather Checks
+          </h2>
+
+          <div class="grid-layout">
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <h3>🇫🇷 Paris</h3>
+
+                <p>
+                  Romantic evenings, cafés,
+                  and weather that changes fast.
+                </p>
+
+                <button
+                  onclick="getWeather('Paris')"
+                  class="submit-button"
+                  style="margin-top:15px;"
+                >
+                  Check Paris
+                </button>
+
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <h3>🇯🇵 Tokyo</h3>
+
+                <p>
+                  Bright city lights, rainy seasons,
+                  and humid summers.
+                </p>
+
+                <button
+                  onclick="getWeather('Tokyo')"
+                  class="submit-button"
+                  style="margin-top:15px;"
+                >
+                  Check Tokyo
+                </button>
+
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <h3>🇮🇹 Rome</h3>
+
+                <p>
+                  Warm afternoons,
+                  long walks,
+                  and golden evenings.
+                </p>
+
+                <button
+                  onclick="getWeather('Rome')"
+                  class="submit-button"
+                  style="margin-top:15px;"
+                >
+                  Check Rome
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- INFO SECTION -->
+
+        <section style="margin-top:70px;">
+
+          <h2 style="
+            text-align:center;
+            margin-bottom:30px;
+            color:#4f6d8f;
+          ">
+            Why Weather Matters
+          </h2>
+
+          <div class="grid-layout">
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <div style="font-size:2rem;">🌡️</div>
+
+                <h3 style="margin-top:15px;">
+                  Temperature
+                </h3>
+
+                <p>
+                  Helps you pack correctly
+                  and plan your days realistically.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <div style="font-size:2rem;">🌧️</div>
+
+                <h3 style="margin-top:15px;">
+                  Conditions
+                </h3>
+
+                <p>
+                  Rain, wind, or heat
+                  can completely shift your plans.
+                </p>
+
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="card-body">
+
+                <div style="font-size:2rem;">🧳</div>
+
+                <h3 style="margin-top:15px;">
+                  Planning
+                </h3>
+
+                <p>
+                  Weather quietly shapes
+                  your entire experience.
+                </p>
+
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+      </main>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Map | Exploratour</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="page-shell">
+        <div class="site-card">
+
+            <!-- ================= NAV ================= -->
+
+            <header class="topbar">
+
+                <a href="../index.html" class="brand">
+                    <span class="brand-mark">✦</span>
+                    <span class="brand-text">Exploratour</span>
+                </a>
+
+                <div class="topbar-right">
+
+                    <a href="login.html" class="text-link">
+                        Log In
+                    </a>
+
+                    <a href="register.html" class="button-light">
+                        Sign Up
+                    </a>
+
+                    <button class="hamburger" id="menuBtn">
+                        ☰
+                    </button>
+
+                </div>
+
+                <nav class="mobile-menu" id="mobileMenu">
+
+                    <div class="menu-section">
+                        <p>Explore</p>
+
+                        <a href="destinations.html">Destinations</a>
+                        <a href="country.html">Country</a>
+                        <a href="cityguide.html">City Guide</a>
+                        <a href="activities.html">Activities</a>
+                        <a href="hiddengems.html">Hidden Gems</a>
+                        <a href="food.html">Food</a>
+                        <a href="videos.html">Videos</a>
+                        <a href="weather.html">Weather</a>
+                        <a href="map.html">Map</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Plan</p>
+
+                        <a href="booking.html">Booking</a>
+                        <a href="flights.html">Flights</a>
+                        <a href="hotels.html">Hotels</a>
+                        <a href="transportation.html">Transportation</a>
+                        <a href="itinerary.html">Itinerary</a>
+                        <a href="budget.html">Budget</a>
+                        <a href="checklist.html">Checklist</a>
+                        <a href="deals.html">Deals</a>
+                        <a href="safety.html">Safety</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Account</p>
+
+                        <a href="account.html">Account</a>
+                        <a href="savedtrips.html">Saved Trips</a>
+                        <a href="payments.html">Payments</a>
+                        <a href="login.html">Login</a>
+                        <a href="register.html">Register</a>
+                    </div>
+
+                    <div class="menu-section">
+                        <p>Help</p>
+
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="support.html">Support</a>
+                    </div>
+
+                </nav>
+
+            </header>
+
+            <!-- ================= PAGE CONTENT ================= -->
+
+            <main style="padding:120px 30px 80px;">
+
+                <!-- HERO -->
+
+                <section style="text-align:center; margin-bottom:50px;">
+
+                    <h1 style="
+                        font-size:4rem;
+                        color:#805690;
+                        font-family:Georgia, serif;
+                        margin-bottom:15px;
+                    ">
+                        Explore the Map ✨
+                    </h1>
+
+                    <p style="
+                        color:#6a7076;
+                        max-width:760px;
+                        margin:0 auto;
+                        line-height:1.8;
+                        font-size:1.08rem;
+                    ">
+                        See how everything connects.
+                        Zoom out for the bigger picture,
+                        then zoom in until the trip starts to feel real.
+                    </p>
+
+                </section>
+
+                <!-- INTRO BLOCK -->
+
+                <section style="
+                    background:#fff7fb;
+                    border-left:8px solid #f89e9d;
+                    padding:35px;
+                    border-radius:20px;
+                    max-width:950px;
+                    margin:0 auto 50px;
+                ">
+
+                    <p style="
+                        margin:0;
+                        color:#805690;
+                        line-height:1.9;
+                        font-size:1.03rem;
+                    ">
+                        ✦ A trip isn’t just the destination.
+                        It’s where you stay, how far things are,
+                        what neighborhoods feel right,
+                        and how easily your days flow together.
+                    </p>
+
+                </section>
+
+                <!-- SEARCH SECTION -->
+
+                <section style="
+                    background:white;
+                    border-radius:24px;
+                    padding:40px;
+                    margin-bottom:40px;
+                    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+                ">
+
+                    <h2 style="
+                        color:#805690;
+                        text-align:center;
+                        margin-bottom:12px;
+                    ">
+                        Search a Destination
+                    </h2>
+
+                    <p style="
+                        text-align:center;
+                        color:#6a7076;
+                        margin-bottom:30px;
+                    ">
+                        Try searching cities like Tokyo, Rome, Paris, Seoul, or Marrakech.
+                    </p>
+
+                    <div class="map-search-container">
+
+                        <input
+                            type="text"
+                            id="mapSearch"
+                            placeholder="Search a city..."
+                        >
+
+                        <button onclick="updateMap()">
+                            Search ✦
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <!-- QUICK DESTINATIONS -->
+
+                <section style="margin-bottom:40px;">
+
+                    <h2 style="
+                        color:#805690;
+                        margin-bottom:20px;
+                    ">
+                        Quick Explore
+                    </h2>
+
+                    <div style="
+                        display:flex;
+                        flex-wrap:wrap;
+                        gap:14px;
+                    ">
+
+                        <button onclick="document.getElementById('mapSearch').value='Tokyo'; updateMap();"
+                            class="submit-button"
+                            style="width:auto;">
+                            Tokyo 🇯🇵
+                        </button>
+
+                        <button onclick="document.getElementById('mapSearch').value='Rome'; updateMap();"
+                            class="submit-button"
+                            style="width:auto;">
+                            Rome 🇮🇹
+                        </button>
+
+                        <button onclick="document.getElementById('mapSearch').value='Paris'; updateMap();"
+                            class="submit-button"
+                            style="width:auto;">
+                            Paris 🇫🇷
+                        </button>
+
+                        <button onclick="document.getElementById('mapSearch').value='Seoul'; updateMap();"
+                            class="submit-button"
+                            style="width:auto;">
+                            Seoul 🇰🇷
+                        </button>
+
+                        <button onclick="document.getElementById('mapSearch').value='Marrakech'; updateMap();"
+                            class="submit-button"
+                            style="width:auto;">
+                            Marrakech 🇲🇦
+                        </button>
+
+                    </div>
+
+                </section>
+
+                <!-- MAP -->
+
+                <section style="
+                    background:white;
+                    padding:25px;
+                    border-radius:24px;
+                    box-shadow:0 12px 30px rgba(0,0,0,0.08);
+                    margin-bottom:50px;
+                ">
+
+                    <iframe
+                        id="mapFrame"
+                        class="map-frame"
+                        src="https://www.google.com/maps?q=Paris&output=embed"
+                        loading="lazy"
+                        style="
+                            width:100%;
+                            height:500px;
+                            border:none;
+                            border-radius:18px;
+                        ">
+                    </iframe>
+
+                </section>
+
+                <!-- TIPS -->
+
+                <section>
+
+                    <h2 style="
+                        color:#805690;
+                        margin-bottom:25px;
+                        font-size:2rem;
+                    ">
+                        What to Look For ✦
+                    </h2>
+
+                    <div class="grid-layout">
+
+                        <div class="info-card">
+
+                            <div class="card-body">
+
+                                <h3 style="color:#d46f93;">
+                                    📍 Neighborhoods
+                                </h3>
+
+                                <p>
+                                    The area you stay in changes
+                                    how the entire trip feels.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <div class="card-body">
+
+                                <h3 style="color:#d46f93;">
+                                    🚆 Transportation
+                                </h3>
+
+                                <p>
+                                    Look at train stations, walkability,
+                                    and how easy it is to move around.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="info-card">
+
+                            <div class="card-body">
+
+                                <h3 style="color:#d46f93;">
+                                    ☕ Nearby Spots
+                                </h3>
+
+                                <p>
+                                    Cafés, restaurants, parks,
+                                    and quieter streets matter more than people think.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

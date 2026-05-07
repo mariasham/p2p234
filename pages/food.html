@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Food | Exploratour</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- ================= NAVBAR ================= -->
+
+      <header class="topbar">
+
+        <a href="../index.html" class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </a>
+
+        <div class="topbar-right">
+
+          <a href="login.html" class="text-link">
+            Log In
+          </a>
+
+          <a href="register.html" class="button-light">
+            Sign Up
+          </a>
+
+          <button class="hamburger" id="menuBtn">
+            ☰
+          </button>
+
+        </div>
+
+        <nav class="mobile-menu" id="mobileMenu">
+
+          <div class="menu-section">
+            <p>Explore</p>
+
+            <a href="destinations.html">Destinations</a>
+            <a href="country.html">Country</a>
+            <a href="cityguide.html">City Guide</a>
+            <a href="activities.html">Activities</a>
+            <a href="hiddengems.html">Hidden Gems</a>
+            <a href="food.html">Food</a>
+            <a href="videos.html">Videos</a>
+            <a href="weather.html">Weather</a>
+            <a href="map.html">Map</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Plan</p>
+
+            <a href="booking.html">Booking</a>
+            <a href="flights.html">Flights</a>
+            <a href="hotels.html">Hotels</a>
+            <a href="transportation.html">Transportation</a>
+            <a href="itinerary.html">Itinerary</a>
+            <a href="budget.html">Budget</a>
+            <a href="checklist.html">Checklist</a>
+            <a href="deals.html">Deals</a>
+            <a href="safety.html">Safety</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Account</p>
+
+            <a href="account.html">Account</a>
+            <a href="savedtrips.html">Saved Trips</a>
+            <a href="payments.html">Payments</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+          </div>
+
+          <div class="menu-section">
+            <p>Help</p>
+
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="support.html">Support</a>
+          </div>
+
+        </nav>
+
+      </header>
+
+      <!-- ================= PAGE CONTENT ================= -->
+
+      <main style="padding:120px 30px 80px;">
+
+        <!-- HERO -->
+
+        <section style="text-align:center; margin-bottom:50px;">
+
+          <h1 style="
+            font-size:4rem;
+            color:#805690;
+            font-family:Georgia, serif;
+            margin-bottom:15px;
+          ">
+            Food & Local Spots 🍜
+          </h1>
+
+          <p style="
+            color:#6a7076;
+            max-width:760px;
+            margin:0 auto;
+            line-height:1.8;
+            font-size:1.08rem;
+          ">
+            The best part of traveling isn’t just where you go —
+            it’s what you taste along the way.
+          </p>
+
+        </section>
+
+        <!-- HERO IMAGE -->
+
+        <section style="margin-bottom:55px;">
+
+          <img
+            src="../images/foodhero.jpeg"
+            alt="Food around the world"
+            style="
+              width:100%;
+              height:350px;
+              object-fit:cover;
+              border-radius:24px;
+              box-shadow:0 12px 30px rgba(0,0,0,0.12);
+            "
+          >
+
+        </section>
+
+        <!-- QUOTE BLOCK -->
+
+        <section style="
+          background:#fff7fb;
+          border-left:8px solid #f89e9d;
+          padding:35px;
+          border-radius:20px;
+          max-width:950px;
+          margin:0 auto 55px;
+        ">
+
+          <p style="
+            margin:0;
+            color:#805690;
+            line-height:1.9;
+            font-size:1.03rem;
+          ">
+            ✦ Sometimes you remember the meals more than the landmarks.
+            A tiny café, a late-night street vendor, or something you almost didn’t try.
+          </p>
+
+        </section>
+
+        <!-- FILTER BUTTONS -->
+
+        <section style="
+          display:flex;
+          justify-content:center;
+          flex-wrap:wrap;
+          gap:14px;
+          margin-bottom:45px;
+        ">
+
+          <button onclick="filterFood('all')" class="submit-button" style="
+            width:auto;
+            background:#f89e9d;
+            padding:12px 22px;
+          ">
+            All
+          </button>
+
+          <button onclick="filterFood('comfort')" class="submit-button" style="
+            width:auto;
+            background:#ffcf8b;
+            color:#5b425f;
+            padding:12px 22px;
+          ">
+            Comfort Food
+          </button>
+
+          <button onclick="filterFood('street')" class="submit-button" style="
+            width:auto;
+            background:#dcf9a8;
+            color:#5b425f;
+            padding:12px 22px;
+          ">
+            Street Food
+          </button>
+
+          <button onclick="filterFood('fine')" class="submit-button" style="
+            width:auto;
+            background:#c1f0fb;
+            color:#5b425f;
+            padding:12px 22px;
+          ">
+            Fine Dining
+          </button>
+
+        </section>
+
+        <!-- DYNAMIC GRID -->
+
+        <section style="margin-bottom:70px;">
+
+          <div class="grid-layout" id="foodGrid"></div>
+
+        </section>
+
+        <!-- FEATURED SPOTS -->
+
+        <section style="margin-bottom:70px;">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:25px;
+            font-size:2rem;
+          ">
+            Featured Food Cities ✨
+          </h2>
+
+          <div class="grid-layout">
+
+            <!-- TOKYO -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/tokyofood.jpg"
+                alt="Tokyo food"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Japan 🇯🇵
+                </span>
+
+                <h3 style="color:#805690;">
+                  Tokyo
+                </h3>
+
+                <p>
+                  Tiny ramen shops, sushi counters, convenience store snacks, and food everywhere.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- ITALY -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/pasta.jpg"
+                alt="Italian food"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Italy 🇮🇹
+                </span>
+
+                <h3 style="color:#805690;">
+                  Rome
+                </h3>
+
+                <p>
+                  Fresh pasta, espresso, and dinners that somehow last all night.
+                </p>
+
+              </div>
+
+            </div>
+
+            <!-- MOROCCO -->
+
+            <div class="info-card">
+
+              <img
+                src="../images/moroccofood.jpg"
+                alt="Moroccan food"
+                style="
+                  width:100%;
+                  height:220px;
+                  object-fit:cover;
+                "
+              >
+
+              <div class="card-body">
+
+                <span class="card-tag">
+                  Morocco 🇲🇦
+                </span>
+
+                <h3 style="color:#805690;">
+                  Marrakech
+                </h3>
+
+                <p>
+                  Markets, spices, grilled food, tea, and energy that feels alive.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- TIPS SECTION -->
+
+        <section style="margin-bottom:70px;">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:25px;
+            font-size:2rem;
+          ">
+            How to Eat Like a Local
+          </h2>
+
+          <div class="grid-layout">
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🍴 Go Where It’s Busy
+                </h3>
+
+                <p>
+                  If locals are waiting for a table, there’s usually a reason.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🧾 Avoid Tourist Menus
+                </h3>
+
+                <p>
+                  The best spots usually feel smaller, quieter, and more personal.
+                </p>
+
+              </div>
+
+            </div>
+
+            <div class="info-card">
+
+              <div class="card-body">
+
+                <h3 style="color:#d46f93;">
+                  🌍 Try Something New
+                </h3>
+
+                <p>
+                  The meal you’re unsure about might become your favorite memory.
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- FINAL SECTION -->
+
+        <section style="
+          text-align:center;
+          max-width:760px;
+          margin:0 auto;
+        ">
+
+          <h2 style="
+            color:#805690;
+            margin-bottom:18px;
+          ">
+            Food tells you more than guidebooks ever will.
+          </h2>
+
+          <p style="
+            color:#6a7076;
+            line-height:1.9;
+          ">
+            You learn what people value, how they gather,
+            what slows them down, and what brings them together.
+          </p>
+
+        </section>
+
+      </main>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
